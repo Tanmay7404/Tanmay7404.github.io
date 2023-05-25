@@ -40,12 +40,10 @@ function found_data (obj){
         element.setAttribute("id","Rectangle_"+(i+4));
         element.setAttribute("style","top:"+top+"px")
         top=top+114;
-        element.innerHTML += '<p class="S_Nos">' + (i+4) + '</p><svg class="Double_Circles">'
-        element.innerHTML +='<svg class="Double_Circles">'
-        element.innerHTML +='<ellipse cx="40" cy="40"  rx="40" ry="40" style="fill:#FFFFFF" />'
-        element.innerHTML +='<ellipse cx="40" cy="40"  rx="37.21" ry="37.21" style="fill:#BABEFF" /></svg>'
+        element.innerHTML += '<p class="S_Nos">' + (i+4) + '</p>'
+        element.innerHTML +='<svg class="Double_Circles"><ellipse cx="40" cy="40"  rx="40" ry="40" style="fill:#FFFFFF" /><ellipse cx="40" cy="40"  rx="37.21" ry="37.21" style="fill:#BABEFF" /></svg>'
         element.innerHTML +='<img src="' + obj[i+3].avatar + '" class="Images">'
         element.innerHTML += '<p class="Names">' + obj[i+3].name + '</p><p class="Scores">' + obj[i+3].points+ '</p>'
-        document.body.appendChild(element);
+        document.getElementById("Desktop_1").appendChild(element);
     }
 }
