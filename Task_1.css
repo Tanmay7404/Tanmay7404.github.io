@@ -4,7 +4,7 @@ body{
 #Desktop_1{
     position: relative;
     width: 100%;
-    height: 1024px;
+    height: auto;
 
     background: #FFFFFF;
     z-index: -1;
